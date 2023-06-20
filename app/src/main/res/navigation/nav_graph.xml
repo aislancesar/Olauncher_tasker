@@ -24,6 +24,13 @@
             app:exitAnim="@anim/fade_exit"
             app:popEnterAnim="@anim/fade_enter"
             app:popExitAnim="@anim/fade_exit" />
+        <action
+            android:id="@+id/action_mainFragment_to_taskViz2"
+            app:destination="@id/taskViz"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/fade_enter"
+            app:popEnterAnim="@anim/fade_exit"
+            app:popExitAnim="@anim/fade_exit" />
     </fragment>
 
     <fragment
@@ -53,6 +60,15 @@
             app:exitAnim="@anim/fade_exit"
             app:popEnterAnim="@anim/fade_enter"
             app:popExitAnim="@anim/fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskViz"
+        android:name="app.olauncher.TaskViz"
+        android:label="fragment_task_viz"
+        tools:layout="@layout/fragment_task_viz" >
+        <action
+            android:id="@+id/action_taskViz_to_mainFragment2"
+            app:destination="@id/mainFragment" />
     </fragment>
 
 </navigation>

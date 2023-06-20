@@ -188,4 +188,35 @@
         android:layout_marginBottom="56dp"
         android:text="@string/set_as_default_launcher"
         android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/tasksLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="180dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskList"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="20dp"
+            android:fadingEdgeLength="24dp"
+            android:requiresFadingEdge="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/addTask"
+            style="@style/TextDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center|center_vertical"
+            android:text="Nova Tarefa"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
 </FrameLayout>
